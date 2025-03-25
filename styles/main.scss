@@ -2,5 +2,38 @@
 @use 'mixins' as *;
 @use 'normalize';
 @use 'header';
+@use 'banner';
 @use 'footer';
 @use 'burger';
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif; // Укажи шрифт из Figma
+    line-height: 1.5;
+    color: $text-color; // Основной цвет текста
+    background-color: $background-color;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

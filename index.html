@@ -5,19 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
     <header class="header">
-        <!-- Шапка будет здесь -->
+        <div class="header__container">
+            <a href="#" class="header__logo">Логотип</a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#" class="header__link">Бизнес</a></li>
+                    <li class="header__item"><a href="#" class="header__link">О нас</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Цены</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Оформить заказ</a></li>
+                </ul>
+            </nav>
+            <button class="header__burger" aria-label="Открыть меню">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
     </header>
     <main class="main">
-        <!-- Основная часть будет здесь -->
+        <section class="banner">
+            <div class="banner__content">
+              <h1 class="banner__title">
+                <span class="banner__title-highlight">Lorem ipsum</span> dolor sit<br>
+                 ametconsectetur <span class="banner__title-highlight">adipiscing</span>
+              </h1>
+              <p class="banner__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+              <ul class="banner__list">
+                <li class="banner__item">Totam rem aperiam eaque ipsa</li>
+                <li class="banner__item">Sit voluptatem accusantium doloremque laudantium</li>
+                <li class="banner__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+              </ul>
+              <div class="banner__buttons">
+                <button class="banner__button banner__button--primary">Заказать</button>
+                <button class="banner__button banner__button--secondary">Подробнее</button>
+              </div>
+            </div>
+          </section>
     </main>
     <footer class="footer">
         <!-- Футер будет здесь -->
     </footer>
-    <script src="scripts/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
