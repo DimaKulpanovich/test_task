@@ -9,15 +9,15 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header uppercase">
         <div class="header__container">
-            <a href="#" class="header__logo">Логотип</a>
+            <a href="#" class="header__logo">LoremIpsum.<span class="banner__title-highlight">Net</span></a>
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item"><a href="#" class="header__link">Бизнес</a></li>
                     <li class="header__item"><a href="#" class="header__link">О нас</a></li>
                     <li class="header__item"><a href="#" class="header__link">Цены</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Оформить заказ</a></li>
+                    <li class="header__item"><a href="#order" class="header__link">Оформить заказ</a></li>
                 </ul>
             </nav>
             <button class="header__burger" aria-label="Открыть меню">
@@ -30,25 +30,132 @@
     <main class="main">
         <section class="banner">
             <div class="banner__content">
-              <h1 class="banner__title">
-                <span class="banner__title-highlight">Lorem ipsum</span> dolor sit<br>
-                 ametconsectetur <span class="banner__title-highlight">adipiscing</span>
-              </h1>
-              <p class="banner__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
-              <ul class="banner__list">
-                <li class="banner__item">Totam rem aperiam eaque ipsa</li>
-                <li class="banner__item">Sit voluptatem accusantium doloremque laudantium</li>
-                <li class="banner__item">Sed ut perspiciatis, unde omnis iste natus error</li>
-              </ul>
-              <div class="banner__buttons">
-                <button class="banner__button banner__button--primary">Заказать</button>
-                <button class="banner__button banner__button--secondary">Подробнее</button>
-              </div>
+                <h1 class="banner__title uppercase">
+                    <span class="banner__title-highlight">Lorem ipsum</span> dolor sit<br>
+                    ametconsectetur <span class="banner__title-highlight">adipiscing</span>
+                </h1>
+                <p class="banner__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+                <ul class="banner__list">
+                    <li class="banner__item">Totam rem aperiam eaque ipsa</li>
+                    <li class="banner__item">Sit voluptatem accusantium doloremque laudantium</li>
+                    <li class="banner__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                </ul>
+                <div class="banner__buttons ">
+                    <button class="banner__button banner__button--primary uppercase">Заказать</button>
+                    <button class="banner__button banner__button--secondary uppercase">Подробнее</button>
+                </div>
             </div>
-          </section>
+        </section>
+        <section class="order" id="order">
+            <div class="order__container">
+                <h2 class="order__title uppercase">Оформление <span class="banner__title-highlight">Заказа</span></h2>
+                <p class="order__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+
+                <!-- Иконки с точками -->
+                <div class="order__steps">
+                    <div class="order__step">
+                        <div class="order__step-circle">
+                            <img src="src/images/search.svg" alt="Шаг 1" class="order__step-icon">
+                        </div>
+                        <p class="order__step-text">Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <img src="src/images/dots.svg" class="order__step-dots" alt="• • • • •">
+                    <div class="order__step">
+                        <div class="order__step-circle">
+                            <img src="src/images/percent.svg" alt="Шаг 1" class="order__step-icon">
+                        </div>
+                        <p class="order__step-text">Сonsecteturadipiscing elit</p>
+                    </div>
+                    <img src="src/images/dots.svg" class="order__step-dots" alt="• • • • •">
+                    <div class="order__step">
+                        <div class="order__step-circle">
+                            <img src="src/images/file.svg" alt="Шаг 1" class="order__step-icon">
+                        </div>
+                        <p class="order__step-text">Sed do eiusmod tempor</p>
+                    </div>
+                    <img src="src/images/dots.svg" class="order__step-dots" alt="• • • • •">
+                    <div class="order__step">
+                        <div class="order__step-circle">
+                            <img src="src/images/message.svg" alt="Шаг 1" class="order__step-icon">
+                        </div>
+                        <p class="order__step-text">Esse cillum dolore eu fugiat</p>
+                    </div>
+                    <img src="src/images/dots.svg" class="order__step-dots" alt="• • • • •">
+                    <div class="order__step">
+                        <div class="order__step-circle">
+                            <img src="src/images/money.svg" alt="Шаг 1" class="order__step-icon">
+                        </div>
+                        <p class="order__step-text">Excepteur sint occaecat cupidatat non proident</p>
+                    </div>
+                </div>
+
+                <!-- Форма -->
+                <form class="order__form">
+                    <!-- Первый ряд -->
+                    <div class="order__form-row">
+                        <div class="custom-input-dropdown">
+                            <input type="text" name="select" class="custom-input-dropdown__input"
+                                placeholder="Выберите тип системы" readonly>
+                            <div class="custom-input-dropdown__list">
+                                <div class="custom-input-dropdown__item" data-value="1">Sed ut perspiciatis</div>
+                                <div class="custom-input-dropdown__item" data-value="2">Nemo enim ipsam</div>
+                                <div class="custom-input-dropdown__item" data-value="3">Et harum quidem</div>
+                                <div class="custom-input-dropdown__item" data-value="4">Temporibus autem</div>
+                                <div class="custom-input-dropdown__item" data-value="5">Itaque earum rerum</div>
+                                <div class="custom-input-dropdown__item" data-value="6">Sed ut perspiciatis</div>
+                                <div class="custom-input-dropdown__item" data-value="7">Nemo enim ipsam</div>
+                                <div class="custom-input-dropdown__item" data-value="8">Et harum quidem</div>
+                                <div class="custom-input-dropdown__item" data-value="9">Temporibus autem</div>
+                                <div class="custom-input-dropdown__item" data-value="10">Itaque earum rerum</div>
+                                <!-- Добавьте другие варианты -->
+                            </div>
+                        </div>
+                        <input type="email" name="email" placeholder="Ваш e-mail" class="order__input">
+                        <input type="text" name="name" placeholder="Ваше имя" class="order__input">
+                    </div>
+                    <div class="order__form-row">
+                        <div class="order__range-container">
+                            <div class="order__range-values">
+                                <p class="order__range-text">Sed ut perspiciatis, unde omnis iste natus</p>
+                                <span>50%</span>
+                            </div>
+                            <input type="range" name="progress" min="0" max="100" class="order__range">
+                        </div>
+                        <div class="order__file-upload">
+                            <input type="file" name="file" id="file-upload" class="order__file-input">
+                            <label for="file-upload" class="order__file-label uppercase">
+                                <img src="src/images/file-upload.svg" alt="🗎" class="order__upload-icon">
+                                Прикрепить файл
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="order__submit uppercase">Отправить</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer class="footer">
-        <!-- Футер будет здесь -->
+        <div class="footer__container">
+            <div class="footer__block">
+                <p class="footer__text">© 2018 «LoremIpsum.net» Все права защищены.</p>
+            </div>
+
+            <div class="footer__divider"></div>
+
+            <div class="footer__block">
+                <div class="footer__payment"><img src="src/images/Q.svg" alt="🗎" class="footer__payment-icon">Qiwi wallet</div>
+                <div class="footer__payment"><img src="src/images/ym.svg" alt="🗎" class="footer__payment-icon">Yandex Money</div>
+                <div class="footer__payment"><img src="src/images/wm.svg" alt="🗎" class="footer__payment-icon">Web Money</div>
+            </div>
+
+            <div class="footer__divider"></div>
+
+            <div class="footer__block">
+                <a href="mailto:info@ipsum228.com" class="footer__link"><img src="src/images/mail.svg" alt="🗎" class="footer__link-icon">info@ipsum228.com</a>
+                <a href="#" class="footer__link"><img src="src/images/В.svg" alt="🗎" class="footer__link-icon">Мы вконтакте</a>
+            </div>
+        </div>
     </footer>
     <script src="js/main.js"></script>
 </body>

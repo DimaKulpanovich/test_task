@@ -3,21 +3,28 @@
 @use 'normalize';
 @use 'header';
 @use 'banner';
+@use 'order';
+@use 'custom-list';
 @use 'footer';
 @use 'burger';
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Lato", sans-serif; // Укажи шрифт из Figma
+    font-family: "Lato", sans-serif;
     line-height: 1.5;
-    color: $text-color; // Основной цвет текста
+    color: $text-color;
     background-color: $background-color;
 }
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    outline: none;
 }
 
 a {
@@ -36,4 +43,23 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: #3D4050;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3E9CDC;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
 }
