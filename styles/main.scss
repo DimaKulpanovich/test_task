@@ -1,12 +1,10 @@
 @use 'variables' as *;
 @use 'mixins' as *;
-@use 'normalize';
 @use 'header';
 @use 'banner';
 @use 'order';
 @use 'custom-list';
 @use 'footer';
-@use 'burger';
 
 html {
     scroll-behavior: smooth;
